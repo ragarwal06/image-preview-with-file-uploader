@@ -3,14 +3,16 @@
   "version": "0.0.1",
   "description": "",
   "devDependencies": {
-    "@ui5/cli": "1.13.0",
-    "@sap/ui5-builder-webide-extension": "1.0.x"
+    "@sap-ux/ui5-proxy-middleware": "^1.3.10",
+    "@sap/ui5-builder-webide-extension": "1.1.x",
+    "@ui5/cli": "3.10.3"
   },
   "scripts": {
     "build": "ui5 build --clean-dest --include-task=generateManifestBundle generateCachebusterInfo"
   },
   "ui5": {
     "dependencies": [
+      "@sap-ux/ui5-proxy-middleware",
       "@sap/ui5-builder-webide-extension"
     ]
   },
